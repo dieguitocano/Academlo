@@ -15,8 +15,8 @@
 body{
     background-color: #020404;
     background-size: cover;
-    max-height: 100vh;
     box-sizing: border-box;
+    overflow-x: hidden;
     
     
 
@@ -25,20 +25,27 @@ body{
 
 /* ----------------------Navegacion--------------------- */
 
-
-a, li {
-    font-family: 'rubik';
-    color: #adadad;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
+.burguer {
+    width: fit-content;
 }
 
-.nav-menu li{
-    display: flex;
-    display: inline-block;
-    padding: 30px 20px;  
-    margin-top: 0;
+#burguer-menu {
+    color: #adadad;
+    object-fit: contain;
+    
+    
+}
+
+menu, ul, li, a{
+    font-family: 'rubik';
+    color: #adadad;
+    text-align: center;
+    padding: 3%;
+    display: block;
+    padding: 9px;
+    
+    
+    
     
 }
 
@@ -47,26 +54,46 @@ a, li {
 .white-words {
     color: #ffffff;
     text-align: center;
-    font-size: 340%;
+    font-size: 280%;
 }
 
 .gray-words {
     color: #adadad;
     text-align: center;
-    font-size: 280%;
-    padding-bottom: 30px;
+    font-size: 200%;
+    margin-bottom: 2%;
+}
+
+@media (max-width 900px) {
+    .white-words {
+        font-size: 5%;
+        padding-bottom: 15%;
+    }
+
 }
 
 .social-button {
     color: #adadad;
     background-color: #020404;
-    width: 150px;
-    height: 150px;
+    /*width: 8%;*/
+    /*height:;*/
     border-radius: 50%;
-    font-size: 50px;
+    font-size: smaller;
     text-align: center; 
-    border: none; 
+    border: none;
+    height: 50%;
+    width: 10%; 
      
+}
+
+@media screen and (max-width: 1000px) {
+    .social-button{
+        align-items: center;
+        width: 35%;
+        height: 35%;
+
+    }
+    
 }
 
 .social-image {
@@ -91,6 +118,7 @@ a, li {
     color: #ffffff;
     font-size: 205%;
     margin-left: 10%;
+    margin-top: 7%;
 
 }
 
@@ -105,6 +133,16 @@ a, li {
     align-items: center;
     align-content: space-between;
     border: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .interactive-buttons{
+        align-items: center;
+    }
+
+    #titles{
+        visibility: hidden;
+    }
 }
 
 .interactive-title1 {

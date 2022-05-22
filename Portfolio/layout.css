@@ -1,84 +1,146 @@
 /* ------------------Menu Nav------------------*/
 
+.right {
+    padding-left: 40%;
+
+}
 
 .nav-menu {
     position: fixed;
-    margin-top: 0%;
-    padding-left: 40%;
+    margin: auto;
     z-index: 999;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; 
 
 }
+
+.nav-menu, ul{
+    width: 100%;
+}
+
+
+
+.nav-menu, ul, li{
+    display: flex;
+    /*justify-content: flex-end;*/
+    
+    
+    
+}
+
+
+
+.burguer{
+    display: flex;
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 88%;
+}
+
+@media screen and (max-width: 1000px) {
+    #letras-menu{
+        visibility: hidden;
+    }
+
+    #burguer-menu{
+        visibility: visible;
+        
+    }
+
+    
+}
+
 
 /*-----------------------Main Section------------*/
 
-.container-vectors {
+.container-vector1 {
    /* background-color: aqua;*/
-    width: 116%;
-    margin-bottom: 80%; 
+    width: 100%;
+    margin-top: 15%;
     position: absolute;
-    margin-top: 150px;
-    margin-left: -10%;
     overflow-x: hidden;
-       
+    display: flex;
 }
 
-.vector {
-    width: 98%;
+.container-vector2 {
+    /* background-color: aqua;*/
+     width: 100%;
+     margin-top: 40%;
+     position: absolute;
+     overflow-x: hidden;
+     display: flex;
+        
+ }
+
+/*.vector {
+    width: 100%;
     overflow: hidden;
-    min-width: 100vh;
     overflow-x: hidden;
-    
-    
+
+
 }
 
 .vector22 {
-    width: 98%;
+    width: 100%;
     overflow: hidden;
-    min-width: 100vh;
-    overflow-x: hidden;
-    margin-top: 80px;
-}
+    margin-top: 7%;
+}*/
 
 .main-image {
     margin-left: 38%;
-    margin-top: 250px;
+    margin-top: 14%;
     position: absolute;
-    width: 50%;
+    width: 100%;
 }
 
 .main-image2 {
-    width: 50%;
+    width: 25%;
 
 }
 
 .titles-container {
     position: absolute;
-    margin-left: 26%;
-    margin-top: 670px;
-    width: 50%;
+   /* margin-left: 15%;*/
+    margin-top: 48%;
+    width: 100%;
 
 }
 
 .social-container {
-    margin-left: 31%;
-    position: absolute;
-    margin-top: 890px;
-    display: flex;
-    display: inline-flex;
-    justify-items: auto;
-    justify-content: space-evenly;
-    width: 40%;
-    height: 40%;
-    flex-wrap: wrap;
 
-   
+    position: absolute;
+    margin-top: 64%;
+    display: flex;
+    /*display: inline-flex;*/
+    /*justify-items: ;*/
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    flex-wrap: nowrap;
+    
+
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .social-button{
+        margin-top: auto;
+        margin-top: 20%;
+    }
+    
 }
 
 .paragraph {
     width: 80%;
     text-align: center;
     padding-left: 21%;
-    padding-top: 1600px;
+    padding-top: 105%;
+    position: relative;
 }
 
 .round-vector1 {
@@ -105,7 +167,7 @@
 .element-container {
     width: 40%;
     display: flex;
-    margin-top: 120px;
+    margin-top: 9%;
     justify-content: space-evenly;
     position: absolute;
     align-items: center;
@@ -157,7 +219,7 @@
 .this-experiencia {
     font-size: 280%;
     color: #ffffff;
-    margin-top: 220px;
+    margin-top: 20%;
     text-align: center;
 }
 

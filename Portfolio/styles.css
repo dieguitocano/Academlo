@@ -25,6 +25,8 @@ body{
 
 /* ----------------------Navegacion--------------------- */
 
+
+
 .burguer {
     width: fit-content;
 }
@@ -124,6 +126,7 @@ menu, ul, li, a{
 
 
 /*-----------------Element Box-----------------*/
+
 
 .interactive-buttons {
     background-color: #020404;
